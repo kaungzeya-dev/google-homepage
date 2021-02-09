@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+}
+
+#google-logo {
+  margin: 200px 0 50px 0;
+}
+
+.searchbar {
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  z-index: 1;
+  height: 44px;
+  max-width: 484px;
+  margin: 0 auto;
+}
+
+input {
+  border: none;
+  outline: none;
+  height: 38px;
+  width: 350px;
+  font-size: 20px;
+}
+
+#magnifying-glass {
+  color: rgb(118, 118, 118);
+  position: relative;
+  right: 10px;
+  top: 2px;
+}
+
+#microphone {
+  height: 25px;
+  width: auto;
+  position: relative;
+  left: 20px;
+  top: 8px;
+}
