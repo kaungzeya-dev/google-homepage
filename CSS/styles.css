@@ -1,9 +1,18 @@
-body {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.wrapper {
+  text-align: center;
+}
 #google-logo {
-  margin: 200px 0 50px 0;
+  margin: 250px 0 40px 0;
 }
 
 .searchbar {
@@ -12,7 +21,7 @@ body {
   border-radius: 24px;
   z-index: 1;
   height: 44px;
-  max-width: 484px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -20,14 +29,14 @@ input {
   border: none;
   outline: none;
   height: 38px;
-  width: 350px;
+  width: 450px;
   font-size: 20px;
 }
 
 #magnifying-glass {
   color: rgb(118, 118, 118);
   position: relative;
-  right: 10px;
+  right: 30px;
   top: 2px;
 }
 
@@ -37,4 +46,118 @@ input {
   position: relative;
   left: 20px;
   top: 8px;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 20px 4px;
+  padding: 0 16px;
+  height: 36px;
+  min-width: 54px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+/* nav bar */
+
+.nav-bar-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+.gb_Xe {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+}
+
+#sign-in-btn {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 9px 23px;
+  margin: 0 8px;
+  background: #1a73e8;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+a.top-nav-a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:visited {
+  color: black;
+}
+
+/* footer */
+
+.country {
+  padding: 15px 15px 15px 30px;
+  border: 1px solid rgb(218, 220, 224);
+}
+
+footer {
+  background-color: #f2f2f2;
+  margin-top: auto;
+  color: #70757a;
+}
+
+.footer-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 16px;
+  height: 18px;
+}
+
+.footer-links-col1 {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.footer-links-col2 {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-links-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+a.footer-a {
+  text-decoration: none;
+  color: #70757a;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
 }
