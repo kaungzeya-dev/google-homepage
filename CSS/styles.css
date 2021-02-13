@@ -129,9 +129,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
-  padding: 16px;
-  height: 18px;
+  padding: 16px 16px 0 16px;
 }
 
 .footer-links-col1 {
